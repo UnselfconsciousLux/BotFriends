@@ -1,3 +1,5 @@
+# BotFriends
+
 <<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,8 +69,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-||||||| merged common ancestors
-=======
-# friendslist
-Random Practice to create a cards list using react
->>>>>>> 939414759d5de903c84b673ee1f2797bd6e22eb1
+
+
+
