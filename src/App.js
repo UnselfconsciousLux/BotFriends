@@ -1,37 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
+
 import CardList from './CardList';
-import Searchbox from './Searchbox';
+
 import {robots} from './robots';
 
-// STATE - Describes the STATE of the application
-// PROPS - are simply things comes out of state
+const App = () => {
+	return(
 
-class App extends Component {
-
-	constructor() {
-		super();
-		this.state = {
-			robots: robots,
-			searchfield: ''
-		}
-	}
-
-	onSearchChange = (event) => {
-		this.setState({ searchfield: event.target.value})
-	}
-
-	render(){
-		const filteredRobots = this.state.robots.filter(robot => {
-		return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
-		})
-		return(
-			<div className='tc'>
-				<h1>Bot Friends</h1>
-				<Searchbox searchChange = {this.onSearchChange}/>	
-				<CardList robots={filteredRobots}/>
-			</div>
-		);
-	}
+		<div>
+			<CardList robots={robots}/>
+		</div>
+	);
 }
 
 export default App;
