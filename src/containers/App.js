@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
-import CardList from './CardList';
-import Searchbox from './Searchbox';
+//import CardList from './CardList';
+import CardList from '../components/CardList';
+import Searchbox from '../components/Searchbox';
 //import {robots} from './robots';
 import './App.css';
+import Scroll from '../components/Scroll'
 
 // STATE - Describes the STATE of the application
 // PROPS - are simply things comes out of state
@@ -40,7 +42,9 @@ class App extends Component {
 				<div className='tc'>
 					<h1 className = 'f1'>bot friends</h1>
 					<Searchbox searchChange = {this.onSearchChange}/>	
-					<CardList robots={filteredRobots}/>
+					<Scroll>
+						<CardList robots={filteredRobots}/>
+					</Scroll>
 				</div>
 			);
 
